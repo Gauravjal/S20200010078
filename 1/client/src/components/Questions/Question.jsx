@@ -5,7 +5,6 @@ import moment from "moment";
 
 import copy from "copy-to-clipboard";
 import LeftSideBar from "../LeftSideBar/LeftSidebar";
-import RightSideBar from "../RightSideBar/RightSideBar";
 import MainBar from "../MainSideBar/MainSideBar";
 import { useDispatch } from "react-redux";
 import upvoteIcon from "../../assets/caret-up-solid.svg";

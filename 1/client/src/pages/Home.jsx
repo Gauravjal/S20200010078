@@ -1,6 +1,5 @@
 import React from "react";
 import LeftSideBar from "../components/LeftSideBar/LeftSidebar";
-import RightSideBar from "../components/RightSideBar/RightSideBar";
 import MainBar from "../components/MainSideBar/MainSideBar";
 function Home() {
   return (
@@ -8,7 +7,6 @@ function Home() {
       <LeftSideBar />
       <div className="home-sub-container">
         <MainBar />
-        <RightSideBar />
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import LeftSideBar from "../LeftSideBar/LeftSidebar";
-import RightSideBar from "../RightSideBar/RightSideBar";
 import MainBar from "../MainSideBar/MainSideBar";
 import { postQuestion } from "../../actions/Question";
 import Alert from "../Alert/Alert";
