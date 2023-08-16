@@ -2,7 +2,7 @@ import axios from "axios";
 
 const url = "http://20.244.56.144/train/trains";
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTIyMDAzMzcsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDc4ZDQyZGEtM2VhZC00NGQxLTkyYTMtYzljYWJhNThlYTgwIiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IlMyMDIwMDAxMDA3OCJ9.w6bL6vpYH45T5R_kTKlkBn0xGM-6xmw3JG4nHpEqe0s";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTIyMDA4NDYsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDc4ZDQyZGEtM2VhZC00NGQxLTkyYTMtYzljYWJhNThlYTgwIiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IlMyMDIwMDAxMDA3OCJ9.d6Jo3_aYqT7JngBqOiHebvDNDSDYiHinDvFMjzvBVio";
 const config = {
   headers: {
     Authorization: `Bearer ${token}`,

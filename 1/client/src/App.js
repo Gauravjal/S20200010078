@@ -38,7 +38,45 @@ function App() {
         className="main-bar"
       >
         <div style={{ overflowY: "scroll", height: "90vh", width: "100%" }}>
-          {trainsList?.length} Trains
+          {trainsList?.length} Trains are available
+          <div
+                style={{
+                  minHeight: "50px",
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  backgroundColor: "#fdf7e2",
+                  borderBottom: "solid 1px #edeff0",
+                }}
+                className="display-train-container"
+              >
+                <div style={{ padding: "10px" }} className="display-votes-ans">
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    Train No
+                  </p>
+                </div>
+                <div style={{ padding: "10px" }} className="display-votes-ans">
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    Name
+                  </p>
+                </div>
+                <div style={{ padding: "10px" }} className="display-votes-ans">
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    Price in ruppess
+                  </p>
+                  </div>
+                  <div style={{ padding: "10px" }} className="display-votes-ans">
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    Seates Available now
+                  </p>
+                </div>
+                <div style={{ padding: "10px" }} className="display-votes-ans">
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    Departure Time
+                  </p>
+                </div>
+                
+              </div>
           {trainsList?.map((train) => {
             return (
               <div
@@ -68,23 +106,26 @@ function App() {
                 </div>
                 <div style={{ padding: "10px" }} className="display-votes-ans">
                   <p style={{ margin: "0%", textAlign: "center" }}>
-                    AC:{train?.price?.AC} Ruppess
+                    AC:{train?.price?.AC} 
                     <br/>
-                    Sleeper:{train?.price?.sleeper} Ruppess
+                    Sleeper:{train?.price?.sleeper}
+                  </p>
+                </div>
+                <div style={{ padding: "10px" }} className="display-votes-ans">
+                 
+                  <p style={{ margin: "0%", textAlign: "center" }}>
+                    AC:{train?.seatsAvailable?.AC} seates
+                    <br/>
+                    Sleeper:{train?.seatsAvailable?.sleeper} seates
                   </p>
                 </div>
                 <div style={{ padding: "10px" }} className="display-votes-ans">
                   <p style={{ margin: "0%", textAlign: "center" }}>
-                    AC:{train?.seatesAvailable?.AC} seates
-                    <br/>
-                    Sleeper:{train?.seatesAvailable?.sleeper} seates
-                  </p>
-                </div>
-                <div style={{ padding: "10px" }} className="display-votes-ans">
-                  <p style={{ margin: "0%", textAlign: "center" }}>
-                    AC:{train?.departureTime?.Hours} seates
-                    <br/>
-                    Sleeper:{train?.seatesAvailable?.sleeper} seates
+                    Departure Time
+                  <br/>
+                    {train?.departureTime?.Hours} :{train?.departureTime?.Minutes}:{train?.departureTime?.Seconds}
+                    
+                    
                   </p>
                 </div>
               </div>
