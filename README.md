@@ -1,1 +1,1 @@
-# S20200010078
+The mini project displays real-time information about trains scheduled within the next 12 hours. This includes details such as seat availability, pricing, departure time, and more. The project retrieves up-to-date train data from an API and presents it on the frontend interface.
